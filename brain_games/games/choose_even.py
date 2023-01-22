@@ -25,8 +25,7 @@ Let's try again, {name}!"
         print(f"Question: {result}")
         user_answer = prompt.string("Your answer: ")
         true_answer = user_answer.lower()  # if user use incorrect register
-        if even == 0 and true_answer == "yes" or \
-                even != 0 and true_answer == "no":
+        if even == 0 and true_answer == "yes" or even != 0 and true_answer == "no":
             print(correct_answer)
             i += 1
         elif true_answer != "yes" and true_answer != "no":
