@@ -51,20 +51,3 @@ def get_max_devider(result):
             num2 = num2 % num1
     result = num1 + num2
     return result
-    
-    
-
-
-
-   
-
-
-        
-
-    
-  
-
-               
-               
-
-

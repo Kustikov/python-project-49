@@ -1,10 +1,38 @@
+name = ""
+user_answer = ""
+true_answer = ""
+game = ''
 #  rules of games
+
 nod = "Find the greatest common divisor of given numbers."
+calc = "What is the result of the expression?"
 
 
 def rules_of_game(nod):
-    if nod:
-        print(nod)
+    print(nod)
+    return
+   
+   
+def print_wrong(user_answer, true_answer, name):
+    print( f"Your answer: {user_answer}\n'{user_answer}' \
+is wrong answer ;(. Correct answer was '{true_answer}'.\
+Let's try again, {name}!")
     return
 
-print(rules_of_game(nod))
+
+def print_congrat(name):
+    print(f"Congratulations, {name}!")
+    return
+   
+
+def print_correct():
+    print("Correct")
+    return
+
+
+
+
+
+    
+
+
