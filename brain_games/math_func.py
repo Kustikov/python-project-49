@@ -6,6 +6,14 @@ def random_number():
     return random_number
 
 
+def is_even(random_number):
+    result = random_number % 2
+    if result == 0:
+        return 'yes'
+    else:
+        return 'no'
+    
+
 def random_expression():  # Generate random expression
     num1 = random_number()
     num2 = random_number()

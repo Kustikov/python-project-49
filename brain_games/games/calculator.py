@@ -1,6 +1,12 @@
 import prompt
 from brain_games.welcome_user import welcome_user
-from brain_games.output_func import rules_of_game, print_correct, print_congrat, print_wrong, calc
+from brain_games.output_func import (
+    rules_of_game,
+    print_correct,
+    print_congrat,
+    print_wrong,
+    calc,
+)
 from brain_games.math_func import random_expression, result_of_expression
 
 
@@ -18,7 +24,7 @@ def brain_calculator():
             print_correct
             i += 1
         elif user_answer != true_answer:
-            print_wrong(user_answer, true_answer, name)              
+            print_wrong(user_answer, true_answer, name)
             return
     print_congrat(name)
     return
