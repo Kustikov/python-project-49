@@ -8,6 +8,7 @@ even = "Answer 'yes' if the number is even, \
 otherwise answer 'no'."
 progression = "What number is missing in the progression?"
 
+
 def rules_of_game(nod):
     print(nod)
     return

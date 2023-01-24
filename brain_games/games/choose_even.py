@@ -13,7 +13,7 @@ from brain_games.math_func import random_number, is_even
 def brain_even():
     name = welcome_user()  # greeting's of user
     rule_of_game = rules_of_game(even)
-#    correct_answer = "Correct!"
+    #    correct_answer = "Correct!"
     answer_for_win = 3  # count of answer for win
     i = 0
     while i < answer_for_win:

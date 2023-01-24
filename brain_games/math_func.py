@@ -1,18 +1,19 @@
 from random import randint
+from random import choice
 
 
 def random_number():
-    random_number = randint(1, 100)
+    random_number = randint(1, 20)
     return random_number
 
 
 def is_even(random_number):
     result = random_number % 2
     if result == 0:
-        return 'yes'
+        return "yes"
     else:
-        return 'no'
-    
+        return "no"
+
 
 def random_expression():  # Generate random expression
     num1 = random_number()
@@ -59,3 +60,30 @@ def get_max_devider(result):
             num2 = num2 % num1
     result = num1 + num2
     return result
+
+
+def get_random_progression():
+    start = random_number()
+    diff = random_number()
+    progression = [start]
+    i = 0
+    list_length = 10
+    while i < list_length - 1:
+        start += diff
+        progression.append(start)
+        i += 1
+    return progression
+
+
+def get_hidden_num():
+    progression = get_random_progression()
+    new_progression = []
+    hidden_num = choice(progression)
+    for i in progression:
+        if i == hidden_num:
+            new_progression.append("..")
+        else:
+            new_progression.append(i)
+    question = " ".join(map(str, new_progression))
+    print(f"Question: {question}")
+    return hidden_num
