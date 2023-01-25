@@ -1,25 +1,24 @@
 import prompt
 from brain_games.welcome_user import welcome_user
+from brain_games.math_func import is_prime
 from brain_games.output_func import (
     rules_of_game,
     print_correct,
     print_congrat,
     print_wrong,
-    nod,
+    prime,
 )
-from brain_games.math_func import random_of_two_numbers, get_max_devider
 
 
-def brain_gcd():
+def brain_prime():
     name = welcome_user()
-    rules_of_game(nod)
+    rules_of_game(prime)
     answer_for_win = 3  # count of answer for win
     i = 0
     while i < answer_for_win:
-        result = random_of_two_numbers()
-        print(f"Question: {result}")
-        user_answer = prompt.integer(prompt="Your answer: ")
-        true_answer = get_max_devider(result)
+        true_answer = is_prime()
+        user_answer = prompt.string("Your answer: ")
+        user_answer = user_answer.lower()  # if user use incorrect register
         if user_answer == true_answer:
             print_correct()
             i += 1
@@ -27,4 +26,3 @@ def brain_gcd():
             print_wrong(user_answer, true_answer, name)
             return
     print_congrat(name)
-    return

@@ -12,7 +12,7 @@ from brain_games.output_func import (
 
 def brain_progression():
     name = welcome_user()
-    rule_of_game = rules_of_game(progression)
+    rules_of_game(progression)
     answer_for_win = 3  # count of answer for win
     i = 0
     while i < answer_for_win:

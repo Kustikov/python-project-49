@@ -4,9 +4,10 @@ true_answer = ""
 #  rules of games
 nod = "Find the greatest common divisor of given numbers."
 calc = "What is the result of the expression?"
-even = "Answer 'yes' if the number is even, \
-otherwise answer 'no'."
+even = 'Answer "yes" if the number is even, \
+otherwise answer "no".'
 progression = "What number is missing in the progression?"
+prime = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def rules_of_game(nod):

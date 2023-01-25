@@ -12,7 +12,7 @@ from brain_games.math_func import random_expression, result_of_expression
 
 def brain_calculator():
     name = welcome_user()  # greeting's of user
-    rule_of_game = rules_of_game(calc)
+    rules_of_game(calc)
     answer_for_win = 3  # count of answer for win
     i = 0
     while i < answer_for_win:

@@ -75,6 +75,7 @@ def get_random_progression():
     return progression
 
 
+#  Вопрос пользователю и получение правильного ответа по игре progression
 def get_hidden_num():
     progression = get_random_progression()
     new_progression = []
@@ -87,3 +88,21 @@ def get_hidden_num():
     question = " ".join(map(str, new_progression))
     print(f"Question: {question}")
     return hidden_num
+
+
+# Вопрос пользователю и получение правильного ответа по игре brain-prime
+def is_prime():
+    result = random_number()
+    print(f"Question: {result}")
+    count = 2  # кол-во делителей для простого числа
+    if result == 1:  # простое число > 1
+        return "no"
+    elif result > 1:
+        for i in range(2, result):  # итератор в диапазоне от двух до number - 1
+            if (result % i) == 0:  # if есть деление без остатка
+                count += 1  # плюсуюм делитель
+                break  # прерываем цикл чтобы не идти до конца
+    if count > 2:  # делителей больше двух, значит не простое число
+        return "no"
+    else:
+        return "yes"
