@@ -1,13 +1,13 @@
 import prompt
-from brain_games.welcome_user import welcome_user
 from brain_games.output_func import (
+    welcome_user,
     rules_of_game,
     print_correct,
     print_congrat,
     print_wrong,
     nod,
 )
-from brain_games.math_func import random_of_two_numbers, get_max_devider
+from brain_games.math_func import get_max_devider
 
 
 def brain_gcd():
@@ -16,10 +16,8 @@ def brain_gcd():
     answer_for_win = 3  # count of answer for win
     i = 0
     while i < answer_for_win:
-        result = random_of_two_numbers()
-        print(f"Question: {result}")
+        true_answer = get_max_devider()
         user_answer = prompt.integer(prompt="Your answer: ")
-        true_answer = get_max_devider(result)
         if user_answer == true_answer:
             print_correct()
             i += 1

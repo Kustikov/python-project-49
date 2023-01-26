@@ -1,7 +1,7 @@
 import prompt
-from brain_games.welcome_user import welcome_user
 from brain_games.math_func import get_hidden_num
 from brain_games.output_func import (
+    welcome_user,
     rules_of_game,
     print_correct,
     print_congrat,

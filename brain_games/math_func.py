@@ -3,19 +3,22 @@ from random import choice
 
 
 def random_number():
-    random_number = randint(1, 20)
+    random_number = randint(1, 30)
     return random_number
 
 
-def is_even(random_number):
-    result = random_number % 2
+def is_even():  # brain-even
+    result = ""
+    number = random_number()
+    print(f"Question: {number}")
+    result = number % 2
     if result == 0:
         return "yes"
     else:
         return "no"
 
 
-def random_expression():  # Generate random expression
+def random_expression():  # generate expression for calc
     num1 = random_number()
     num2 = random_number()
     index = randint(0, 2)
@@ -25,8 +28,10 @@ def random_expression():  # Generate random expression
     return result
 
 
-def result_of_expression(str):  # calculate random expression
-    num_list = str.split(" ")
+def result_of_expression():  # brain-calc
+    expression = random_expression()
+    print(f"Question: {expression}")
+    num_list = expression.split(" ")  # str.answer from user to int
     operand = num_list[1]
     num1 = int(num_list[0])
     num2 = int(num_list[2])
@@ -40,16 +45,17 @@ def result_of_expression(str):  # calculate random expression
     return result
 
 
-def random_of_two_numbers():
+def random_of_two_numbers():  # num's for brain-nod
     num1 = random_number()
     num2 = random_number()
     result = f"{num1} {num2}"
     return result
 
 
-def get_max_devider(result):
-    list = result.split(" ")
-    print(result)
+def get_max_devider():  # brain-nod
+    numbers = random_of_two_numbers()
+    print(f"Question: {numbers}")
+    list = numbers.split(" ")
     result = 0
     num1 = int(list[0])
     num2 = int(list[1])
@@ -62,7 +68,7 @@ def get_max_devider(result):
     return result
 
 
-def get_random_progression():
+def get_random_progression():  # generate progression
     start = random_number()
     diff = random_number()
     progression = [start]
@@ -75,8 +81,7 @@ def get_random_progression():
     return progression
 
 
-#  Вопрос пользователю и получение правильного ответа по игре progression
-def get_hidden_num():
+def get_hidden_num():  # brain-progression
     progression = get_random_progression()
     new_progression = []
     hidden_num = choice(progression)
@@ -90,8 +95,7 @@ def get_hidden_num():
     return hidden_num
 
 
-# Вопрос пользователю и получение правильного ответа по игре brain-prime
-def is_prime():
+def is_prime():  # brain-prime
     result = random_number()
     print(f"Question: {result}")
     count = 2  # кол-во делителей для простого числа
