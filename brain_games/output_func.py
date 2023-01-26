@@ -13,16 +13,17 @@ progression = "What number is missing in the progression?"
 prime = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
-def welcome_user():
+def name_of_game(nod):
+    print(nod)
+    return
+
+
+def welcome_user(nod):
     print("Welcome to the Brain Games!")
     NAME = prompt.string("May I have your name? ")
     print(f"Hello, {NAME}!")
+    name_of_game(nod)
     return NAME
-
-
-def rules_of_game(nod):
-    print(nod)
-    return
 
 
 def print_wrong(USER_ANSWER, TRUE_ANSWER, NAME):

@@ -2,7 +2,6 @@ import prompt
 from brain_games.math_func import is_even
 from brain_games.output_func import (
     welcome_user,
-    rules_of_game,
     print_correct,
     print_congrat,
     print_wrong,
@@ -11,8 +10,7 @@ from brain_games.output_func import (
 
 
 def brain_even():
-    name = welcome_user()  # greeting's of user
-    rules_of_game(even)
+    name = welcome_user(even)  # greeting's of user
     answer_for_win = 3  # count of answer for win
     i = 0
     while i < answer_for_win:

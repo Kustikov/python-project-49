@@ -2,7 +2,6 @@ import prompt
 from brain_games.math_func import is_prime
 from brain_games.output_func import (
     welcome_user,
-    rules_of_game,
     print_correct,
     print_congrat,
     print_wrong,
@@ -11,8 +10,7 @@ from brain_games.output_func import (
 
 
 def brain_prime():
-    name = welcome_user()
-    rules_of_game(prime)
+    name = welcome_user(prime)
     answer_for_win = 3  # count of answer for win
     i = 0
     while i < answer_for_win:
