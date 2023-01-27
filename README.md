@@ -12,17 +12,17 @@
  brain-prime - ответьте, является ли число простым?
 
  ### install + run brain-even:
-Перед загрузкой пакета убедитесь, что у вас установлена система управления пакетами pip:
-```python3 -m pip --version```
-
-Установка пакета:
-```sudo apt update``` 
-```sudo apt install python3-pip```
- Обновление pip:
- ```python3 -m pip install --user --upgrade pip```
- Для загузки пакета brain-games воспользуйтесь командой:
-  ```python3 -m pip install --user git+https://github.com/Kustikov/python-project-49.git```
-
+Перед загрузкой пакета убедитесь, что у вас установлена система управления пакетами pip:  
+```python3 -m pip --version```  
+  
+Установка пакета:  
+```sudo apt update```   
+```sudo apt install python3-pip```  
+ Обновление pip:  
+ ```python3 -m pip install --user --upgrade pip```  
+ Для загузки пакета brain-games воспользуйтесь командой:  
+  ```python3 -m pip install --user git+https://github.com/Kustikov/python-project-49.git```  
+  
 [![asciicast](https://asciinema.org/a/osoBHM2qAjglcCDZ6P2lBytWW.svg)](https://asciinema.org/a/osoBHM2qAjglcCDZ6P2lBytWW)
 
 ### run brain-calc:
