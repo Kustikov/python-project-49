@@ -4,12 +4,13 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/0f5767cd23e0925c2df1/maintainability)](https://codeclimate.com/github/Kustikov/python-project-49/maintainability)
 ### Описание
 *Для установки доступна коллекция терминальных игр "brain-games*.  
-*В пакет входят:*  
- brain-even - определение четности/ нечетности сгененерированного числа
- brain-calc - необходимо вычислить выражение
- brain-gcd- необходимо найти максимальный делитель предлагаемых чисел
- brain-progression - заполнение недостаюещго числа в прогрессии
- brain-prime - ответьте, является ли число простым?
+  
+*В пакет входят:*   
+ brain-even - определение четности/ нечетности сгененерированного числа  
+ brain-calc - необходимо вычислить выражение  
+ brain-gcd- необходимо найти максимальный делитель предлагаемых чисел  
+ brain-progression - заполнение недостаюещго числа в прогрессии  
+ brain-prime - ответьте, является ли число простым?  
   
  ### install + run brain-even:  
    
@@ -30,6 +31,13 @@
    
   ```python3 -m pip install --user git+https://github.com/Kustikov/python-project-49.git```  
   
+**Установка пакета в систему**  
+  
+  ```package-install```  
+  
+**Удаление пакета из системы**  
+  
+```python3 -m pip uninstall hexlet-code```
 [![asciicast](https://asciinema.org/a/osoBHM2qAjglcCDZ6P2lBytWW.svg)](https://asciinema.org/a/osoBHM2qAjglcCDZ6P2lBytWW)
 
 ### run brain-calc:
