@@ -1,26 +1,23 @@
-import prompt
-from brain_games.output_func import (
-    welcome_user,
-    print_correct,
-    print_congrat,
-    print_wrong,
-    nod,
-)
-from brain_games.math_func import get_max_devider
+from random import randint
 
 
-def brain_gcd():
-    name = welcome_user(nod)
-    answer_for_win = 3  # count of answer for win
-    i = 0
-    while i < answer_for_win:
-        true_answer = get_max_devider()
-        user_answer = prompt.integer(prompt="Your answer: ")
-        if user_answer == true_answer:
-            print_correct()
-            i += 1
-        elif user_answer != true_answer:
-            print_wrong(user_answer, true_answer, name)
-            return
-    print_congrat(name)
-    return
+def random_of_two_numbers():  # num's for brain-nod
+    num1 = randint(1, 50)
+    num2 = randint(1, 20)
+    result = f"{num1} {num2}"
+    return result
+
+
+def brain_gcd():  # brain-nod
+    question = random_of_two_numbers()
+    list = question.split(" ")
+    result = 0
+    num1 = int(list[0])
+    num2 = int(list[1])
+    while num1 != 0 and num2 != 0:
+        if num1 > num2:
+            num1 = num1 % num2
+        else:
+            num2 = num2 % num1
+    result = num1 + num2
+    return question, result

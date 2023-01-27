@@ -1,26 +1,27 @@
-import prompt
-from brain_games.output_func import (
-    welcome_user,
-    print_correct,
-    print_congrat,
-    print_wrong,
-    calc,
-)
-from brain_games.math_func import result_of_expression
+from random import randint
 
 
-def brain_calculator():
-    name = welcome_user(calc)  # greeting's of user
-    answer_for_win = 3  # count of answer for win
-    i = 0
-    while i < answer_for_win:
-        true_answer = result_of_expression()
-        user_answer = prompt.integer(prompt="Your answer: ")
-        if user_answer == true_answer:
-            print_correct
-            i += 1
-        elif user_answer != true_answer:
-            print_wrong(user_answer, true_answer, name)
-            return
-    print_congrat(name)
-    return
+def random_expression():  # generate expression for calc
+    num1 = randint(1, 30)
+    num2 = randint(1, 10)
+    index = randint(0, 2)
+    operators = ["+", "-", "*"]
+    current_operator = operators[index]
+    result = f"{num1} {current_operator} {num2}"
+    return result
+
+
+def calculator():  # brain-calc
+    question = random_expression()
+    num_list = question.split(" ")  # str.answer from user to int
+    operand = num_list[1]
+    num1 = int(num_list[0])
+    num2 = int(num_list[2])
+    result = 0
+    if operand == "*":
+        result = num1 * num2
+    elif operand == "+":
+        result = num1 + num2
+    elif operand == "-":
+        result = num1 - num2
+    return question, result

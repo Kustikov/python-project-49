@@ -1,26 +1,28 @@
-import prompt
-from brain_games.math_func import get_hidden_num
-from brain_games.output_func import (
-    welcome_user,
-    print_correct,
-    print_congrat,
-    print_wrong,
-    progression,
-)
+from random import randint
+from random import choice
 
 
-def brain_progression():
-    name = welcome_user(progression)
-    answer_for_win = 3  # count of answer for win
+def get_random_progression():  # generate progression
+    start = randint(1, 10)
+    diff = randint(1, 30)
+    progression = [start]
     i = 0
-    while i < answer_for_win:
-        true_answer = get_hidden_num()
-        user_answer = prompt.integer(prompt="Your answer: ")
-        if user_answer == true_answer:
-            print_correct()
-            i += 1
-        elif user_answer != true_answer:
-            print_wrong(user_answer, true_answer, name)
-            return
-    print_congrat(name)
-    return
+    list_length = 10
+    while i < list_length - 1:
+        start += diff
+        progression.append(start)
+        i += 1
+    return progression
+
+
+def progression():  # brain-progression
+    progression = get_random_progression()
+    new_progression = []
+    result = choice(progression)
+    for i in progression:
+        if i == result:
+            new_progression.append("..")
+        else:
+            new_progression.append(i)
+    question = " ".join(map(str, new_progression))
+    return question, result
