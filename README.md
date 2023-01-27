@@ -13,20 +13,20 @@
   
  ### install + run brain-even:  
    
-*Перед загрузкой пакета убедитесь, что у вас установлена система управления пакетами pip:*  
+**Перед загрузкой пакета убедитесь, что у вас установлена система управления пакетами pip:**  
   
 ```python3 -m pip --version```  
   
-*Установка пакета:*  
+**Установка пакета:**  
   
 ```sudo apt update```   
 ```sudo apt install python3-pip```  
   
-*Обновление pip:*  
+**Обновление pip:**  
    
  ```python3 -m pip install --user --upgrade pip```  
    
-*Для загузки пакета brain-games воспользуйтесь командой:*  
+**Для загузки пакета brain-games воспользуйтесь командой:**  
    
   ```python3 -m pip install --user git+https://github.com/Kustikov/python-project-49.git```  
   
