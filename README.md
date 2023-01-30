@@ -18,7 +18,7 @@
   
 ```python3 -m pip --version```  
   
-**Установка пакета:**  
+**Установка pip:**  
   
 ```sudo apt update```   
 ```sudo apt install python3-pip```  
@@ -27,27 +27,25 @@
    
  ```python3 -m pip install --user --upgrade pip```  
    
-**Для загузки пакета brain-games воспользуйтесь командой:**  
+**Для загузки игры brain-games воспользуйтесь командой:**  
    
   ```python3 -m pip install --user git+https://github.com/Kustikov/python-project-49.git```  
+      
+**Удаление игр из системы**  
+    
+```python3 -m pip uninstall hexlet-code```  
   
-**Установка пакета в систему**  
-  
-  ```package-install```  
-  
-**Удаление пакета из системы**  
-  
-```python3 -m pip uninstall hexlet-code```
-[![asciicast](https://asciinema.org/a/osoBHM2qAjglcCDZ6P2lBytWW.svg)](https://asciinema.org/a/osoBHM2qAjglcCDZ6P2lBytWW)
+### install games and run brain-even
+[![asciicast](https://asciinema.org/a/pjAHjHZdTRTnL5LTevY5j0InJ.svg)](https://asciinema.org/a/pjAHjHZdTRTnL5LTevY5j0InJ)
 
-### run brain-calc:
+### run brain-calc:  
 [![asciicast](https://asciinema.org/a/EHQ3KCQ2QTzv4fxjoUu9hKqpP.svg)](https://asciinema.org/a/EHQ3KCQ2QTzv4fxjoUu9hKqpP)
 
-### run brain-gcd:
+### run brain-gcd:  
 [![asciicast](https://asciinema.org/a/GmU06rGzxoPHFErNvAZTsMy6Y.svg)](https://asciinema.org/a/GmU06rGzxoPHFErNvAZTsMy6Y)
 
-### run brain-progression
+### run brain-progression  
 [![asciicast](https://asciinema.org/a/lQYIddCT2hipGx9q3ZJQEctRY.svg)](https://asciinema.org/a/lQYIddCT2hipGx9q3ZJQEctRY)
 
-### run brain-prime
+### run brain-prime  
 [![asciicast](https://asciinema.org/a/z6I7YEXzEuxTmF7BmjSC9MJwL.svg)](https://asciinema.org/a/z6I7YEXzEuxTmF7BmjSC9MJwL)

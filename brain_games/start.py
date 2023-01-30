@@ -33,7 +33,6 @@ def start_game(name, game):
     answer_for_win = 3  # count of answer for win
     i = 0
     while i < answer_for_win:
-        print(i)
         question, true_answer = game()
         print(f"Question: {question}")
         true_answer = str(true_answer)
