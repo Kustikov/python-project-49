@@ -2,6 +2,9 @@ from random import randint
 from random import choice
 
 
+rules = "What number is missing in the progression?"
+
+
 def get_random_progression():  # generate progression
     start = randint(1, 10)
     diff = randint(1, 30)

@@ -1,6 +1,9 @@
 from random import randint
 
 
+rules = "Find the greatest common divisor of given numbers."
+
+
 def random_of_two_numbers():  # num's for brain-nod
     num1 = randint(1, 50)
     num2 = randint(1, 20)

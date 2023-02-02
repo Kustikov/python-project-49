@@ -1,6 +1,10 @@
 from random import randint
 
 
+rules = 'Answer "yes" if the number is even, \
+otherwise answer "no".'
+
+
 def brain_even():
     result = ""
     question = ""

@@ -1,6 +1,9 @@
 from random import randint
 
 
+rules = "What is the result of the expression?"
+
+
 def random_expression():  # generate expression for calc
     num1 = randint(1, 30)
     num2 = randint(1, 10)

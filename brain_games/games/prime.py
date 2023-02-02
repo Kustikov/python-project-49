@@ -1,6 +1,9 @@
 from random import randint
 
 
+rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+
+
 def brain_prime():
     number = randint(1, 30)
     question = number
