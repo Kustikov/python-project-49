@@ -1,8 +1,11 @@
 from random import randint
 
-
 rules = 'Answer "yes" if the number is even, \
 otherwise answer "no".'
+
+
+def is_even(number):
+    return number % 2 == 0
 
 
 def brain_even():
@@ -10,8 +13,7 @@ def brain_even():
     question = ""
     number = randint(1, 100)
     question = number
-    result = number % 2
-    if result == 0:
+    if is_even(number):
         result = "yes"
     else:
         result = "no"
