@@ -2,9 +2,12 @@ from random import randint
 from random import choice
 
 
-RULES = "What is the result of the expression?"
 MIN = 1
-MAX = 25
+MAX = 15
+
+
+def print_rules():
+    print("What is the result of the expression?")
 
 
 def calculator():  # brain-calc

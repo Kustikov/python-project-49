@@ -2,10 +2,13 @@ from random import randint
 from random import choice
 
 
-RULES = "What number is missing in the progression?"
 PROGRESSION_LENGTH = 10
 MIN = 1
 MAX = 25
+
+
+def print_rules():
+    print("What number is missing in the progression?")
 
 
 def get_progression(initial_term, common_difference):  # generate progression

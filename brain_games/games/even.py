@@ -1,9 +1,15 @@
 from random import randint
 
-RULES = 'Answer "yes" if the number is even, \
-otherwise answer "no".'
+
 MIN = 1
 MAX = 100
+
+
+def print_rules():
+    print(
+        'Answer "yes" if the number is even, \
+otherwise answer "no".'
+    )
 
 
 def is_even(number):

@@ -4,11 +4,11 @@ import prompt
 ANSWER_FOR_WIN = 3  # count of answer for win
 
 
-def play_game(RULES, get_game_round):
+def play_game(print_rules, get_game_round):
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
-    print(RULES)
+    print_rules()
     i = 0
     while i < ANSWER_FOR_WIN:
         question, true_answer = get_game_round()
