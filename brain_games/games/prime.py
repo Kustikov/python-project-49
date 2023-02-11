@@ -1,7 +1,9 @@
 from random import randint
 
 
-rules = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+MIN = 1
+MAX = 30
 
 
 def is_prime(number):
@@ -14,7 +16,7 @@ def is_prime(number):
 
 
 def brain_prime():
-    number = randint(1, 30)
+    number = randint(MIN, MAX)
     question = number
     if is_prime(number):
         return question, "yes"

@@ -1,7 +1,9 @@
 from random import randint
 
 
-rules = "Find the greatest common divisor of given numbers."
+RULES = "Find the greatest common divisor of given numbers."
+MIN = 2
+MAX = 30
 
 
 def gcd(num1, num2):
@@ -16,8 +18,8 @@ def gcd(num1, num2):
 
 def brain_gcd():  # brain-nod
     result = 0
-    num1 = randint(1, 50)
-    num2 = randint(1, 20)
+    num1 = randint(MIN, MAX)
+    num2 = randint(MIN, MAX)
     question = f"{num1} {num2}"
     result = gcd(num1, num2)
     return question, result

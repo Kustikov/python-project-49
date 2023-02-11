@@ -1,15 +1,17 @@
 import prompt
 
 
-def start_game(rules, game):
+ANSWER_FOR_WIN = 3  # count of answer for win
+
+
+def play_game(RULES, get_game_round):
     print("Welcome to the Brain Games!")
     name = prompt.string("May I have your name? ")
     print(f"Hello, {name}!")
-    print(rules)
-    answer_for_win = 3  # count of answer for win
+    print(RULES)
     i = 0
-    while i < answer_for_win:
-        question, true_answer = game()
+    while i < ANSWER_FOR_WIN:
+        question, true_answer = get_game_round()
         print(f"Question: {question}")
         true_answer = str(true_answer)
         user_answer = prompt.string("Your answer: ")

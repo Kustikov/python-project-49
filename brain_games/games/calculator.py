@@ -1,15 +1,17 @@
 from random import randint
+from random import choice
 
 
-rules = "What is the result of the expression?"
+RULES = "What is the result of the expression?"
+MIN = 1
+MAX = 25
 
 
 def calculator():  # brain-calc
-    num1 = randint(1, 30)
-    num2 = randint(1, 10)
-    index = randint(0, 2)
+    num1 = randint(MIN, MAX)
+    num2 = randint(MIN, MAX)
     operators = ["+", "-", "*"]
-    operand = operators[index]
+    operand = choice(operators)
     question = f"{num1} {operand} {num2}"
     result = 0
     if operand == "*":
