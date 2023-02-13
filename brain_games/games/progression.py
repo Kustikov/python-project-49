@@ -23,13 +23,13 @@ def get_progression(initial_term, common_difference):  # generate progression
 
 def get_question_and_hide_num(progression):
     result = choice(progression)
-    new_progression = []
+    question = ""
     for i in progression:
         if i == result:
-            new_progression.append("..")
+            question = f"{question} .."
         else:
-            new_progression.append(i)
-    question = " ".join(map(str, new_progression))
+            question = f"{question} {i}"
+    question = question.strip()
     return question, result
 
 
