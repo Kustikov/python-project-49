@@ -20,21 +20,21 @@ def get_progression(
     return progression
 
 
-def get_question_and_hide_num(progression):
-    result = choice(progression)
+def get_question_and_hide_num(progression, hidden_number):
     question = ""
     for i in progression:
-        if i == result:
+        if i == hidden_number:
             question = f"{question} .."
         else:
             question = f"{question} {i}"
     question = question.strip()
-    return question, result
+    return question
 
 
 def brain_progression():  # brain-progression
     num1 = randint(MIN, MAX)
     num2 = randint(MIN, MAX)
     progression = get_progression(num1, num2, PROGRESSION_LENGTH)
-    question, result = get_question_and_hide_num(progression)
-    return question, result
+    hidden_number = choice(progression)
+    question = get_question_and_hide_num(progression, hidden_number)
+    return question, hidden_number
