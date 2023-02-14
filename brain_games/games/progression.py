@@ -8,7 +8,9 @@ MAX = 25
 RULES = "What number is missing in the progression?"
 
 
-def get_progression(initial_term, common_difference, PROGRESSION_LENGTH):  # generate progression
+def get_progression(
+    initial_term, common_difference, PROGRESSION_LENGTH
+):  # generate progression
     progression = [initial_term]
     i = 0
     while i < PROGRESSION_LENGTH - 1:
