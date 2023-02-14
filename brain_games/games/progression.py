@@ -8,7 +8,7 @@ MAX = 25
 RULES = "What number is missing in the progression?"
 
 
-def get_progression(initial_term, common_difference):  # generate progression
+def get_progression(initial_term, common_difference, PROGRESSION_LENGTH):  # generate progression
     progression = [initial_term]
     i = 0
     while i < PROGRESSION_LENGTH - 1:
@@ -33,6 +33,6 @@ def get_question_and_hide_num(progression):
 def brain_progression():  # brain-progression
     num1 = randint(MIN, MAX)
     num2 = randint(MIN, MAX)
-    progression = get_progression(num1, num2)
+    progression = get_progression(num1, num2, PROGRESSION_LENGTH)
     question, result = get_question_and_hide_num(progression)
     return question, result
