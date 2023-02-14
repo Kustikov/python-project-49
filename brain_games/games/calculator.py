@@ -4,10 +4,7 @@ from random import choice
 
 MIN = 1
 MAX = 15
-
-
-def print_rules():
-    print("What is the result of the expression?")
+RULES = "What is the result of the expression?"
 
 
 def calculator():  # brain-calc

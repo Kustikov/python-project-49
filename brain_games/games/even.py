@@ -3,13 +3,8 @@ from random import randint
 
 MIN = 1
 MAX = 100
-
-
-def print_rules():
-    print(
-        'Answer "yes" if the number is even, \
+RULES = 'Answer "yes" if the number is even, \
 otherwise answer "no".'
-    )
 
 
 def is_even(number):

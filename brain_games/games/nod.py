@@ -3,10 +3,7 @@ from random import randint
 
 MIN = 2
 MAX = 30
-
-
-def print_rules():
-    print("Find the greatest common divisor of given numbers.")
+RULES = "Find the greatest common divisor of given numbers."
 
 
 def gcd(num1, num2):
