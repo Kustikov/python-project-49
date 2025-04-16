@@ -15,7 +15,6 @@ def brain_even():
         point_for_win = 3
         win_count = 0
         while win_count < point_for_win:
-            print(win_count)
             number, answer = brain_even_cli()
             correct = "yes" if is_even(number) else "no"
             if is_even(number) and answer == "yes":
