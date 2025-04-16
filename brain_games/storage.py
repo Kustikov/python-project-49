@@ -1,4 +1,0 @@
-CORRECT_ANSWER = "Correct!"
-CONGRATULATIONS = "Congratulations,"
-FIRST_NUMBER = 2
-LAST_NUMBER = 100
