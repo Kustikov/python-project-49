@@ -25,8 +25,7 @@ def brain_even():
                 print("Correct!")
             else:
                 print(
-                    f"{answer} is wrong answer ;(. "
-                    f"Correct answer was '{correct}'. "
+                    f"'{answer} is wrong answer ;(. Correct answer was '{correct}'."
                     f"Let's try again, {name}!"
                 )
                 break
