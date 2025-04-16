@@ -14,9 +14,6 @@ package-install:
 	uv tool install dist/*.whl
 
 lint:
-	uv run ruff check brain_games
-
-black:
-	uv run black brain_games
+	uv 
 
     
