@@ -30,4 +30,4 @@ def brain_even():
                 break
         else:
             print(f"Congratulations, {name}!")
-            break
+            return
