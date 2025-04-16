@@ -1,7 +1,7 @@
 from brain_games.brain_even_cli import brain_even_cli
 from brain_games.greet import welcome_user
 
-BRAIN_EVEN_RULE = "Answer 'yes' if the number is even, 'otherwise answer' 'no'."
+BRAIN_EVEN_RULE = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(number):
