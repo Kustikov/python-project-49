@@ -50,4 +50,3 @@ def brain_calc():
             wrong(user_answer, correct_answer, name)
             attempt -= attempt
     win(name)
-    return

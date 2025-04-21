@@ -37,4 +37,3 @@ def brain_even():
             wrong(user_answer, correct_answer, name)
             attempt -= attempt
     win(name)
-    return
