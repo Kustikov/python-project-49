@@ -31,3 +31,12 @@ def brain_calc_cli():
     print(question_for_user)
     user_answer = prompt.string("Your answer: ")
     return question_for_user, user_answer
+
+
+def brain_gcd_cli():
+    random_number_1 = randint(FIRST_NUMBER, LAST_NUMBER)
+    random_number_2 = randint(FIRST_NUMBER, LAST_NUMBER)
+    question_for_user = f"Question: {random_number_1} {random_number_2}"
+    print(question_for_user)
+    user_answer = prompt.string("Your answer: ")
+    return question_for_user, user_answer
