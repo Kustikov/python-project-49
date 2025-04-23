@@ -5,6 +5,8 @@ import prompt
 FIRST_NUMBER = 2
 LAST_NUMBER = 20
 EXPRESSION_LIST = ["+", "-", "*"]
+HIDDEN_SYM_FOR_PROGRESSION = ".."
+HIDDEN_INDEX = randint(0, 9)
 
 
 def welcome_user():
@@ -40,3 +42,18 @@ def brain_gcd_cli():
     print(question_for_user)
     user_answer = prompt.string("Your answer: ")
     return question_for_user, user_answer
+
+
+def brain_progression_cli():
+    random_number = randint(FIRST_NUMBER, LAST_NUMBER)
+    step = randint(FIRST_NUMBER, LAST_NUMBER)
+    random_expression = [random_number + step * i for i in range(10)]
+    correct_answer = step
+    random_expression[HIDDEN_INDEX] = HIDDEN_SYM_FOR_PROGRESSION
+    question_for_user = (
+        f"Question: {' '.join(str(x) for x in random_expression)}"
+    )
+    print(question_for_user)
+    user_answer = prompt.string("Your answer: ")
+    return correct_answer, user_answer
+

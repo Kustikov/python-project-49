@@ -42,8 +42,7 @@ def brain_calc():
     while attempt < win_count:
         random_expression, user_answer = brain_calc_cli()
         correct_answer = calc(random_expression)
-        user_answer = int(user_answer)
-        if correct_answer == user_answer:
+        if str(correct_answer) == user_answer:
             correct()
             attempt += 1
         else:
