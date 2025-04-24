@@ -2,8 +2,6 @@ from random import choice, randint
 
 import prompt
 
-FIRST_NUMBER = 2
-LAST_NUMBER = 20
 EXPRESSION_LIST = ["+", "-", "*"]
 HIDDEN_SYM_FOR_PROGRESSION = ".."
 HIDDEN_INDEX = randint(0, 9)
@@ -29,13 +27,6 @@ def wrong(user_answer, correct_answer, name):
 f"""'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.
 Let's try again, {name}!"""
     )
-    
-
-def brain_even_cli():
-    random_number = randint(FIRST_NUMBER, LAST_NUMBER)
-    print(f"Question: {random_number}")
-    user_answer = prompt.string("Your answer: ")
-    return random_number, user_answer
 
 
 def brain_calc_cli():
