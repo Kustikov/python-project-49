@@ -16,6 +16,21 @@ def welcome_user():
     return name
 
 
+def correct():
+    print("Correct!")
+
+
+def win(name):
+    print(f"Congratulations, {name}!")
+
+
+def wrong(user_answer, correct_answer, name):
+    print(
+f"""'{user_answer}' is wrong answer ;(. Correct answer was '{correct_answer}'.
+Let's try again, {name}!"""
+    )
+    
+
 def brain_even_cli():
     random_number = randint(FIRST_NUMBER, LAST_NUMBER)
     print(f"Question: {random_number}")
@@ -56,4 +71,5 @@ def brain_progression_cli():
     print(question_for_user)
     user_answer = prompt.string("Your answer: ")
     return correct_answer, user_answer
+
 
