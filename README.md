@@ -10,11 +10,42 @@
 [![Actions Status](https://github.com/Kustikov/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Kustikov/python-project-49/actions)
 
 
+### Описание
+*коллекция терминальных игр "brain-games*.  
+  
+*В пакет входят:*   
+ brain-even - определение четности/ нечетности сгененерированного числа  
+ brain-calc - необходимо вычислить выражение в калькуляторе
+ brain-gcd- необходимо найти максимальный делитель предлагаемых чисел  
+ brain-progression - заполнение недостаюещго числа в прогрессии  
+ brain-prime - ответьте, является ли число простым?  
 
-### Install
-make build
-make install-packages
+ **Перед загрузкой пакета рекомендуется установить пакетный менеджер UV**  
+  
+```python3 -m pip --version```  
+  
+**Установка uv Linux:**  
+  
+```curl -LsSf https://astral.sh/uv/install.sh | sh```   
+```uv --version```  
+  
+**Установка uv Mac:**  
+   
+```brew install uv```
+```uv --version``` 
 
-### Brain-even
-make brain-even
-[![asciicast](https://asciinema.org/a/wyt24j7Dfi5ZSzUshRjsrUeiw.svg)](https://asciinema.org/a/wyt24j7Dfi5ZSzUshRjsrUeiw)
+**Установка пакета игр серии brain-games в систему**
+```uv tool install git+https://github.com/Kustikov/python-project-49.git```
+
+
+**Удаление brain-games из системы**
+```uv tool uninstall hexlet-code```
+
+### run brain-even
+[![asciicast](https://asciinema.org/a/dvL63Xl21adctd4g30XOP4PTp.svg)](https://asciinema.org/a/dvL63Xl21adctd4g30XOP4PTp)
+
+### run brain-calc
+[![asciicast](https://asciinema.org/a/kVqAS95lnwbKWQsAxO9oSihGy.svg)](https://asciinema.org/a/kVqAS95lnwbKWQsAxO9oSihGy)
+
+### run brain-gcd
+[![asciicast](https://asciinema.org/a/H0GdHAoY9LxEUiB5GCct2wcLS.svg)](https://asciinema.org/a/H0GdHAoY9LxEUiB5GCct2wcLS)
