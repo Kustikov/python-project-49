@@ -1,8 +1,7 @@
-from random import choice, randint
+from random import randint
 
 import prompt
 
-EXPRESSION_LIST = ["+", "-", "*"]
 HIDDEN_SYM_FOR_PROGRESSION = ".."
 HIDDEN_INDEX = randint(0, 9)
 
@@ -29,17 +28,7 @@ Let's try again, {name}!"""
     )
 
 
-def brain_calc_cli():
-    random_number_1 = randint(FIRST_NUMBER, LAST_NUMBER)
-    random_number_2 = randint(FIRST_NUMBER, LAST_NUMBER)
-    random_expression = choice(EXPRESSION_LIST)
-    question_for_user = (
-        f"Question: {random_number_1} {random_expression} {random_number_2}"
-    )
-    print(question_for_user)
-    user_answer = prompt.string("Your answer: ")
-    return question_for_user, user_answer
-
+'''
 
 def brain_gcd_cli():
     random_number_1 = randint(FIRST_NUMBER, LAST_NUMBER)
@@ -62,5 +51,6 @@ def brain_progression_cli():
     print(question_for_user)
     user_answer = prompt.string("Your answer: ")
     return correct_answer, user_answer
+'''
 
 
