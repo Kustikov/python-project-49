@@ -12,7 +12,7 @@ def brain_progression():
     number = randint(MIN, MAX)
     step = randint(MIN, MAX)
     expression = [number + step * i for i in range(progression_length)]
-    result = step
+    result = expression[HIDDEN_INDEX]
     expression[HIDDEN_INDEX] = PASS
     question = (
         f"{' '.join(str(x) for x in expression)}"

@@ -49,3 +49,6 @@
 
 ### run brain-gcd
 [![asciicast](https://asciinema.org/a/H0GdHAoY9LxEUiB5GCct2wcLS.svg)](https://asciinema.org/a/H0GdHAoY9LxEUiB5GCct2wcLS)
+
+### run brain-calc
+[![asciicast](https://asciinema.org/a/tT6eqkyeBa2uJeo396doPaeOq.svg)](https://asciinema.org/a/tT6eqkyeBa2uJeo396doPaeOq)
