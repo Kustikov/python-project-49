@@ -21,4 +21,3 @@ def play_game(game_logic, rule):
         elif user_answer != correct_answer:
             wrong(user_answer, correct_answer, name)
     win(name)
-    return
