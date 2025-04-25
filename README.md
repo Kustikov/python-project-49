@@ -21,9 +21,7 @@
  brain-prime - ответьте, является ли число простым?  
 
  **Перед загрузкой пакета рекомендуется установить пакетный менеджер UV**  
-  
-```python3 -m pip --version```  
-  
+    
 **Установка uv Linux:**  
   
 ```curl -LsSf https://astral.sh/uv/install.sh | sh```   
