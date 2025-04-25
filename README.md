@@ -33,20 +33,26 @@
 ```uv --version``` 
 
 **Установка пакета игр серии brain-games в систему**
+
 ```uv tool install git+https://github.com/Kustikov/python-project-49.git```
 
 
 **Удаление brain-games из системы**
+
 ```uv tool uninstall hexlet-code```
 
 ### run brain-even
+
 [![asciicast](https://asciinema.org/a/dvL63Xl21adctd4g30XOP4PTp.svg)](https://asciinema.org/a/dvL63Xl21adctd4g30XOP4PTp)
 
 ### run brain-calc
+
 [![asciicast](https://asciinema.org/a/kVqAS95lnwbKWQsAxO9oSihGy.svg)](https://asciinema.org/a/kVqAS95lnwbKWQsAxO9oSihGy)
 
 ### run brain-gcd
+
 [![asciicast](https://asciinema.org/a/H0GdHAoY9LxEUiB5GCct2wcLS.svg)](https://asciinema.org/a/H0GdHAoY9LxEUiB5GCct2wcLS)
 
 ### run brain-calc
+
 [![asciicast](https://asciinema.org/a/tT6eqkyeBa2uJeo396doPaeOq.svg)](https://asciinema.org/a/tT6eqkyeBa2uJeo396doPaeOq)
