@@ -2,7 +2,7 @@ import prompt
 
 from brain_games.cli import correct, welcome_user, win, wrong
 
-ROUND_COUNT = 3  # round count's
+ROUND_COUNT = 3  
 
 """
 def play_game(game_logic, rule):
