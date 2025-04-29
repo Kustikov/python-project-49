@@ -1,5 +1,5 @@
 import prompt
-import sys
+
 
 
 from brain_games.cli import correct, welcome_user, win, wrong
@@ -25,7 +25,7 @@ def play_game(game_logic, rule):
     win(name)
 """
 
-
+"""
 def play_game(game_logic, rule):
     name = welcome_user()
     print(rule)
@@ -52,4 +52,28 @@ def play_game(game_logic, rule):
         if i == ROUND_COUNT:
             win(name)
             #break  # Завершаем игру
-            sys.exit(0)
+"""
+
+
+def play_game(game_logic, rule):
+    name = welcome_user()
+    print(rule)
+    i = 0
+    while i < ROUND_COUNT:
+        question, true_answer = game_logic()
+        print(f"Question: {question}")
+        true_answer = str(true_answer)
+        user_answer = prompt.string("Your answer: ")
+        user_answer = user_answer.lower()  # if user use incorrect register
+        if user_answer == true_answer:
+            print("Correct")
+            i += 1
+        elif user_answer != true_answer:
+            print(
+                f"'{user_answer}' is wrong answer ;(. Correct \
+answer was '{true_answer}'.\n\
+Let's try again, {name}!"
+            )
+            return
+    print(f"Congratulations, {name}!")
+    return
