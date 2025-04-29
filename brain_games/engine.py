@@ -22,6 +22,8 @@ def play_game(game_logic, rule):
             wrong(user_answer, correct_answer, name)
     win(name)
 """
+
+
 def play_game(game_logic, rule):
     name = welcome_user()
     print(rule)
