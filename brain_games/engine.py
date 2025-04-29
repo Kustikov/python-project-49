@@ -24,6 +24,7 @@ def play_game(game_logic, rule):
     win(name)
     return
 
+
 """
 def play_game(game_logic, rule):
     name = welcome_user()

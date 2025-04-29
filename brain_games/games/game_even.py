@@ -1,6 +1,5 @@
 import secrets
 
-
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
 NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
