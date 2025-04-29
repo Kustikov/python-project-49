@@ -12,8 +12,7 @@ def is_even(number):
 def brain_even():
     result = ""
     question = ""
-    #number = randint(MIN, MAX)
-    number = 17
+    number = randint(MIN, MAX)
     question = number
     result = is_even(number)
     return question, result
