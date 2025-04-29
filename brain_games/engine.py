@@ -1,4 +1,6 @@
 import prompt
+import sys
+
 
 from brain_games.cli import correct, welcome_user, win, wrong
 
@@ -47,4 +49,5 @@ def play_game(game_logic, rule):
         # Если игрок прошёл все раунды, показываем выигрыш
         if i == ROUND_COUNT:
             win(name)
-            break  # Завершаем игру
+            #break  # Завершаем игру
+            sys.exit(0)
