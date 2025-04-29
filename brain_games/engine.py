@@ -36,7 +36,8 @@ def play_game(game_logic, rule):
             question, correct_answer = game_logic()
             correct_answer = str(correct_answer)
             print(f"Question: {question}")
-            user_answer = prompt.string("Your answer: ")
+            #user_answer = prompt.string("Your answer: ")
+            user_answer = input("Your answer: ")
             user_answer = user_answer.lower()
 
             if user_answer == correct_answer:
