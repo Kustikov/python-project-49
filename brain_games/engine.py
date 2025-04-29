@@ -1,7 +1,5 @@
 import prompt
 
-
-
 from brain_games.cli import correct, welcome_user, win, wrong
 
 ROUND_COUNT = 3  # round count's
@@ -60,20 +58,16 @@ def play_game(game_logic, rule):
     print(rule)
     i = 0
     while i < ROUND_COUNT:
-        question, true_answer = game_logic()
+        question, correct_answer = game_logic()
         print(f"Question: {question}")
-        true_answer = str(true_answer)
+        correct_answer = str(correct_answer)
         user_answer = prompt.string("Your answer: ")
         user_answer = user_answer.lower()  # if user use incorrect register
-        if user_answer == true_answer:
-            print("Correct")
+        if user_answer == correct_answer:
+            correct()
             i += 1
-        elif user_answer != true_answer:
-            print(
-                f"'{user_answer}' is wrong answer ;(. Correct \
-answer was '{true_answer}'.\n\
-Let's try again, {name}!"
-            )
+        elif user_answer != correct_answer:
+            wrong(user_answer, correct_answer, name)
             return
-    print(f"Congratulations, {name}!")
+    win(name)
     return
