@@ -1,15 +1,14 @@
 import secrets
-from random import choice
 
 RULES = "What is the result of the expression?"
 NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+OPERATORS = ["+", "-", "*"]
 
 
 def calculator():
     number_1 = secrets.choice(NUMBERS)
     number_2 = secrets.choice(NUMBERS)
-    operators = ["+", "-", "*"]
-    operand = choice(operators)
+    operand = secrets.choice(OPERATORS)
     question = f"{number_1} {operand} {number_2}"
     result = 0
     match operand:
