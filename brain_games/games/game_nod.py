@@ -1,8 +1,8 @@
-from random import randint
+import secrets
 
 RULES = "Find the greatest common divisor of given numbers."
-MIN = 2
-MAX = 20
+NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 
 
 def gcd(number_1, number_2):
@@ -15,8 +15,8 @@ def gcd(number_1, number_2):
 
 
 def brain_gcd():
-    number_1 = randint(MIN, MAX)
-    number_2 = randint(MIN, MAX)
+    number_1 = secrets.choice(NUMBERS)
+    number_2 = secrets.choice(NUMBERS)
     question = f"{number_1} {number_2}"
     result = gcd(number_1, number_2)
     return question, result

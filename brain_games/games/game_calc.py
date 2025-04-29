@@ -1,13 +1,15 @@
-from random import choice, randint
+from random import choice
+import secrets
+
 
 RULES = "What is the result of the expression?"
-MIN = 2
-MAX = 10
+NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 
 
 def calculator():
-    number_1 = randint(MIN, MAX)
-    number_2 = randint(MIN, MAX)
+    number_1 = secrets.choice(NUMBERS)
+    number_2 = secrets.choice(NUMBERS)
     operators = ["+", "-", "*"]
     operand = choice(operators)
     question = f"{number_1} {operand} {number_2}"

@@ -1,8 +1,8 @@
-from random import randint
+import secrets
 
 RULES = 'Answer "yes" if given number is prime. Otherwise answer "no".'
-MIN = 2
-MAX = 20
+NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
 
 
 def is_prime(number):
@@ -18,7 +18,7 @@ def is_prime(number):
 def brain_prime():
     result = ""
     question = ""
-    number = randint(MIN, MAX)
+    number = secrets.choice(NUMBERS)
     question = number
     result = is_prime(number)
     return question, result
