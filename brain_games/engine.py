@@ -45,6 +45,7 @@ def play_game(game_logic, rule):
                 i += 1
             else:
                 wrong(user_answer, correct_answer, name)
+                print("Let's try again!")
                 break  # Выход из внутреннего цикла и перезапуск игры
 
         # Если игрок прошёл все раунды, показываем выигрыш
