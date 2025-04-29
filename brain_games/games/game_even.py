@@ -1,8 +1,11 @@
 from random import randint
+import secrets
+
 
 RULES = 'Answer "yes" if the number is even, otherwise answer "no".'
-MIN = 2
-MAX = 20
+#MIN = 2
+#MAX = 20
+NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 def is_even(number):
@@ -12,7 +15,8 @@ def is_even(number):
 def brain_even():
     result = ""
     question = ""
-    number = randint(MIN, MAX)
+    #number = randint(MIN, MAX)
+    number = secrets.choice(NUMBERS)
     question = number
     result = is_even(number)
     return question, result
