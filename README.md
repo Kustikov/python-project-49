@@ -27,11 +27,13 @@
 **Установка uv Linux:**  
   
 ```curl -LsSf https://astral.sh/uv/install.sh | sh```   
+
 ```uv --version```  
   
 **Установка uv Mac:**  
    
 ```brew install uv```
+
 ```uv --version``` 
 
 **Установка пакета игр серии brain-games в систему**
