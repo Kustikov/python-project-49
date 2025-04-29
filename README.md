@@ -6,6 +6,8 @@
 
 ### Игры разума
 Серия логических игр
+
+
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Kustikov/python-project-49/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/Kustikov/python-project-49/actions)
 
@@ -53,6 +55,10 @@
 
 [![asciicast](https://asciinema.org/a/H0GdHAoY9LxEUiB5GCct2wcLS.svg)](https://asciinema.org/a/H0GdHAoY9LxEUiB5GCct2wcLS)
 
-### run brain-calc
+### run brain-progression
 
 [![asciicast](https://asciinema.org/a/tT6eqkyeBa2uJeo396doPaeOq.svg)](https://asciinema.org/a/tT6eqkyeBa2uJeo396doPaeOq)
+
+### run brain-prime
+
+[![asciicast](https://asciinema.org/a/amF13N0UgZI2bNQOk45F4ys51.svg)](https://asciinema.org/a/amF13N0UgZI2bNQOk45F4ys51)

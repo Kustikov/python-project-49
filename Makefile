@@ -28,6 +28,9 @@ package-install:
 lint:
 	uv run ruff check brain_games
 
+fix:
+	uv run ruff check brain_games --fix
+
 black:
 	uv run black brain_games
 
