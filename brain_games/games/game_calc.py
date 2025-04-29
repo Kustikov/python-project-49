@@ -1,10 +1,8 @@
-from random import choice
 import secrets
-
+from random import choice
 
 RULES = "What is the result of the expression?"
 NUMBERS = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-
 
 
 def calculator():
