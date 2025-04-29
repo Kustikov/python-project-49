@@ -4,7 +4,7 @@ from brain_games.cli import correct, welcome_user, win, wrong
 
 ROUND_COUNT = 3  
 
-"""
+
 def play_game(game_logic, rule):
     name = welcome_user()
     print(rule)
@@ -20,8 +20,9 @@ def play_game(game_logic, rule):
             i += 1
         elif user_answer != correct_answer:
             wrong(user_answer, correct_answer, name)
+            return
     win(name)
-"""
+    return
 
 """
 def play_game(game_logic, rule):
@@ -52,7 +53,7 @@ def play_game(game_logic, rule):
             #break  # Завершаем игру
 """
 
-
+"""
 def play_game(game_logic, rule):
     name = welcome_user()
     print(rule)
@@ -71,3 +72,4 @@ def play_game(game_logic, rule):
             return
     win(name)
     return
+"""
